@@ -69,7 +69,7 @@ public class ShoppingCartImpl implements ShoppingCart {
 	
 	@Override
 	public String placeOrder() {
-		return "O"+System.currentTimeMillis();
+		return "O"+System.currentTimeMillis()+"O     ";
 	}
 	
 	
