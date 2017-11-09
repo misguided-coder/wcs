@@ -64,7 +64,7 @@ public class ShoppingCartImpl implements ShoppingCart {
 
 	@Override
 	public void clearCart() {
-		cart.clear();
+		cart.clear()
 	}
 	
 	@Override
