@@ -68,5 +68,17 @@ public class CalculatorTest {
 		int rs = cal.sum(171818181, 272727272);
 		Assert.assertTrue("SUM is beyond boundry value!!!!!", Integer.MAX_VALUE <= rs);
 	}
+	
+	@Test
+	public void multiPleWithZero() {
+		int rs=cal.multiply(15, 0);
+		Assert.assertEquals(0, rs);
+	}
+	
+	@Test
+	public void divideTwoPositiveNumbers() {
+		// Calculator cal = new Calculator();
+		Assert.assertEquals(10, cal.divide(150, 5));
+	}
 
 }
