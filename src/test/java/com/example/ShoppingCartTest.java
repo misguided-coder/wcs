@@ -192,6 +192,13 @@ public class ShoppingCartTest {
 		shoppingCart.addItem(product);
 		assertEquals(1, shoppingCart.countItems());
 	}
+	
+	@Test
+	public void addSecondItem() {
+		Product product = new Product(200, "Mobile", 1300.00, 1);
+		shoppingCart.addItem(product);
+		assertEquals(1, shoppingCart.countItems());
+	}
 
 	@Test
 	public void addAndCheckForAddedProductInCart() {
