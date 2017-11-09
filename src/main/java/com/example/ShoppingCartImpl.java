@@ -64,12 +64,12 @@ public class ShoppingCartImpl implements ShoppingCart {
 
 	@Override
 	public void clearCart() {
-		cart.clear()
+		cart.clear();
 	}
 	
 	@Override
 	public String placeOrder() {
-		return "O"+System.currentTimeMillis()+"O     "
+		return "O"+System.currentTimeMillis()+"O     ";
 	}
 	
 	
