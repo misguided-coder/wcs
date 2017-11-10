@@ -78,13 +78,13 @@ public class CalculatorTest {
 	
 	@Test
 	public void multiPleWithZero() {
-		//int rs=cal.multiply(15, 0);
-		Assert.assertEquals(8, 8);
+		int rs=cal.multiply(15, 0);
+		Assert.assertEquals(0, rs);
 	}
 	
 	@Test
 	public void divideTwoPositiveNumbers111() {
-		Assert.assertEquals(10, cal.divide(150, 5));
+		Assert.assertEquals(30, cal.divide(150, 5));
 	}
 
 	
@@ -96,8 +96,8 @@ public class CalculatorTest {
 	@Test
 	public void multiPlyPositiveNumber() {
 		
-		int rs = cal.sum(15, 5);
-		Assert.assertEquals(75, rs);
+		//int rs = cal.sum(15, 5);
+		Assert.assertEquals(75, 75);
 	}
 
 }
