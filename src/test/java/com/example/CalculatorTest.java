@@ -14,13 +14,13 @@ public class CalculatorTest {
 
 	@Before
 	public void init() {
-		System.out.println("Inside init!!!!");
+		
 		cal = new Calculator();
 	}
 
 	@After
 	public void clean() {
-		System.out.println("Inside clean!!!!");
+		
 		cal = null;
 	}
 
@@ -85,8 +85,20 @@ public class CalculatorTest {
 	
 	@Test
 	public void divideTwoPositiveNumbers() {
-		// Calculator cal = new Calculator();
 		Assert.assertEquals(10, cal.divide(150, 5));
+	}
+
+	
+	@Test
+	public void divideTwoBigPositiveNumber() {
+		Assert.assertEquals(3, cal.divide(150, 50));
+	}
+	
+	@Test
+	public void multiPlyPositiveNumber() {
+		
+		int rs = cal.sum(15, 5);
+		Assert.assertEquals(75, rs);
 	}
 
 }
