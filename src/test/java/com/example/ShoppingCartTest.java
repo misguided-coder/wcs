@@ -44,6 +44,25 @@ public class ShoppingCartTest {
 
 	}
 
+
+
+	@Test
+	public void checkForCartEmptyOrNot1() {
+		Product laptop = new Product(100, "Laptop", 1200.00, 1);
+		Product watch = new Product(101, "Watch", 8000.00, 1);
+		Product mobile = new Product(102, "Mobile", 20000.00, 1);
+
+		shoppingCart.addItem(laptop);
+		shoppingCart.addItem(watch);
+		shoppingCart.addItem(mobile);
+		shoppingCart.addItem(mobile);
+		shoppingCart.clearCart();
+
+		assertTrue(shoppingCart.countItems() == 0);
+
+	}
+
+
 	@Test
 	public void checkForCartEmptyOrNot() {
 		Product laptop = new Product(100, "Laptop", 1200.00, 1);
