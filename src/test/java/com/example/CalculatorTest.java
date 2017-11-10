@@ -62,6 +62,14 @@ public class CalculatorTest {
 		Assert.assertEquals(10, rs);
 	}
 
+	@Test
+	public void subtractTwoPositiveNumber() {
+		// Calculator cal = new Calculator();
+		int rs = cal.subtract(10, 5);
+		Assert.assertEquals(5, rs);
+	}
+    
+
 	@Test(expected = AssertionError.class)
 	public void addTwoBigPositiveNumbersForBoundry() {
 		// Calculator cal = new Calculator();

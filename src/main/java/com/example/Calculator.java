@@ -26,5 +26,11 @@ public class Calculator {
 		}*/
 		return valOne * valTwo;
 	}
+    public int subtract(int valOne, int valTwo) {
+		
+		
+		return valOne - valTwo;
+	}
+
 
 }
